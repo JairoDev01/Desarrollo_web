@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Empleado;
-use App\PuntoAcceso;
+use App\Alumno;
 use Illuminate\Http\Request;
 
 class AlumnoController extends Controller
@@ -17,38 +16,23 @@ class AlumnoController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function index(Request $request)
     {
-        $search = $request->get('search') == null ? '' : $request->get('search');
-        $sort = $request->get('sort') == null ? 'desc' : ($request->get('sort'));
-        $sortField = $request->get('field') == null ? 'nombre' : $request->get('field');
-
-        $filtros = ['codigo_interno', 'nombre', 'apellido', 'dpi', 'descripcion', 'celular'];
-        $empleado = Empleado::join('tb_puntos_acceso', 'tb_puntos_acceso.id_accesso', '=', 'tb_empleado.id_punto_acceso')
-            ->select('tb_empleado.*', 'tb_puntos_acceso.descripcion as descripcion')
-            ->actived()
-            ->whereLike($filtros, $search)
-            ->orderBy($sortField, $sort)
+        $alumno = Alumno::all()
             ->paginate(20);
 
         if ($request->ajax()) {
-            return view('registro.empleado.index',
+            return view('alumno.index',
                 [
-                    'search' => $search,
-                    'sort' => $sort,
-                    'sortField' => $sortField,
-                    'empleado' => $empleado
+                    'alumno' => $alumno
                 ]
             );
         } else {
-            return view('registro.empleado.ajax',
+            return view('alumno.ajax',
                 [
-                    'search' => $search,
-                    'sort' => $sort,
-                    'sortField' => $sortField,
-                    'empleado' => $empleado
+                    'alumno' => $alumno
                 ]
             );
         }
@@ -57,17 +41,13 @@ class AlumnoController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function create()
     {
         //
-        $acceso = PuntoAcceso::actived()->get();
-        return view('registro.empleado.create',
-            [
-                'acceso' => $acceso
-            ]
-        );
+        //$acceso = Alumno::get();
+        return view('alumno.create');
 
     }
 
@@ -75,43 +55,38 @@ class AlumnoController extends Controller
      * Store a newly created resource in storage.
      *
      * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      */
     public function store(Request $request)
     {
         //
         //
-        $empleado = new Empleado();
-        $empleado->codigo_interno = $request->get('codigo_interno');
-        $empleado->nombre = $request->get('nombre');
-        $empleado->apellido = $request->get('apellido');
-        $empleado->dpi = $request->get('dpi');
-        $empleado->fecha_nacimiento = $request->get('fecha_nacimiento');
-        $empleado->correo = $request->get('correo');
-        $empleado->direccion = $request->get('direccion');
-        $empleado->id_punto_acceso = $request->get('id_punto_acceso');
-        $empleado->celular = $request->get('celular');
-        $empleado->save();
+
+        $alumno = new Alumno();
+        $alumno->Nombre = $request->get('nombre');
+        $alumno->Apellido = $request->get('apellido');
+        $alumno->Telefono = $request->get('telefono');
+        $alumno->save();
 
         return redirect()
-            ->route('empleado.index')
-            ->with('success', 'Empleado creado correctamente');
+            ->route('alumno.index')
+            ->with('success', 'Alumno creado correctamente');
     }
 
     /**
      * Display the specified resource.
      *
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function show($id)
     {
         try {
 
-            $empleado = Empleado::findOrFail($id);
+            $empleado = Alumno::findOrFail($id);
 
 
-            return view('registro.empleado.show',
+            return view('alumno.show',
                 [
                     'empleado' => $empleado
                 ]
@@ -120,8 +95,7 @@ class AlumnoController extends Controller
 
         } catch (\Exception $ex) {
 
-
-            return redirect()->route('empleado.index')
+            return redirect()->route('alumno.index')
                 ->with('error', 'En este momento no es posible procesar su petición');
 
         }
@@ -131,20 +105,17 @@ class AlumnoController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function edit($id)
     {
         //
 
 
-        $empleado = Empleado::findOrFail($id);
+        $empleado = Alumno::findOrFail($id);
 
-        $acceso = PuntoAcceso::actived()->get();
-
-        return view('registro.empleado.edit', [
-            'empleado' => $empleado,
-            'acceso' => $acceso
+        return view('alumno.edit', [
+            'empleado' => $empleado
         ]);
     }
 
@@ -153,27 +124,21 @@ class AlumnoController extends Controller
      *
      * @param \Illuminate\Http\Request $request
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
         //
 
         try {
-            $empleado = Empleado::findOrFail($id);
-            $empleado->codigo_interno = $request->get('codigo_interno');
-            $empleado->nombre = $request->get('nombre');
-            $empleado->apellido = $request->get('apellido');
-            $empleado->dpi = $request->get('dpi');
-            $empleado->fecha_nacimiento = $request->get('fecha_nacimiento');
-            $empleado->correo = $request->get('correo');
-            $empleado->direccion = $request->get('direccion');
-            $empleado->id_punto_acceso = $request->get('id_punto_acceso');
-            $empleado->celular = $request->get('celular');
-            $empleado->update();
+            $alumno = Alumno::findOrFail($id);
+            $alumno->Nombre = $request->get('nombre');
+            $alumno->Apellido = $request->get('apellido');
+            $alumno->Telefono = $request->get('telefono');
+            $alumno->update();
 
             return redirect()
-                ->route('empleado.index')
+                ->route('alumno.index')
                 ->with('success', 'Empleado actualizado correctamente');
         } catch (\Exception $ex) {
 
@@ -187,18 +152,17 @@ class AlumnoController extends Controller
      * Remove the specified resource from storage.
      *
      * @param int $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\Response
      */
     public function destroy($id)
     {
         //
         try {
 
-            $empleado = Empleado::findOrFail($id);
-            $empleado->estado = 0;
-            $empleado->update();
+            $empleado = Alumno::findOrFail($id);
+            $empleado->delete();
             return response()->json(
-                ['success' => 'Empleado dado de baja correctamente']
+                ['success' => 'Alumno dado de baja correctamente']
             );
 
         } catch (\Exception $ex) {
@@ -210,31 +174,6 @@ class AlumnoController extends Controller
             );
 
         }
-
-    }
-
-
-    /**
-     * @param Request $request
-     * @return
-     */
-    public function search(Request $request)
-    {
-
-        $search = $request->get('search') == null ? '' : $request->get('search');
-        $sort = $request->get('sort') == null ? 'asc' : ($request->get('sort'));
-        $sortField = $request->get('field') == null ? 'nombre' : $request->get('field');
-
-        $filtros = ['codigo_interno', 'nombre', 'apellido'];
-        $empleados = Empleado::select('id_empleado', 'codigo_interno', 'nombre', 'apellido')
-            ->actived()
-            ->whereLike($filtros, $search)
-            ->orderBy($sortField, $sort)
-            ->paginate(20);
-
-
-        return $empleados;
-
 
     }
 }

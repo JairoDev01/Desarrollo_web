@@ -2,47 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="427a64b7-51c1-4b0d-943a-e5eebe1c46bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Alumno.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AlumnoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/loading.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/alumno/ajax.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/alumno/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/alumno/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/alumno/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/alumno/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/alert-delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/alert-error.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/alert-no-selecction.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/alert-success.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/btn-change-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/btn-create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/btn-edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/btn-eliminar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/btn-importar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/btn-ingresar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/btn-reporte.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/btn-ubicar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/btn-ver.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/column-sort.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/formato-carga.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/loading.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/localidades/localidad-css.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/localidades/localidad-js.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/modal-importar-options.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/modal-importar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/modal-ubicacion.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/modal-verificacion.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/nav.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/pagination.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/search-select.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/componentes/search.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Desarrollo_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Desarrollo_web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AlumnoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AlumnoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/alumno/ajax.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alumno/ajax.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/alumno/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alumno/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,8 +180,23 @@
       <option name="presentableId" value="Default" />
       <updated>1595508429569</updated>
       <workItem from="1595508432144" duration="1056000" />
-      <workItem from="1595607560957" duration="3250000" />
+      <workItem from="1595607560957" duration="5656000" />
     </task>
+    <task id="LOCAL-00001" summary="componentes para los cruds">
+      <created>1595611658573</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595611658573</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Crud de alumnos inicial">
+      <created>1595611703116</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595611703116</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,12 +204,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="componentes para los cruds" />
+    <MESSAGE value="Crud de alumnos inicial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Crud de alumnos inicial" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="508" y="43" key="CommitChangelistDialog2" timestamp="1595611657223">
+    <state x="508" y="43" key="CommitChangelistDialog2" timestamp="1595611702098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="508" y="43" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595611657223" />
+    <state x="508" y="43" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595611702098" />
     <state width="1865" height="443" key="GridCell.Tab.0.bottom" timestamp="1595543686460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -255,9 +237,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="591" y="302" key="com.intellij.ide.util.TipDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595607638421" />
-    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup" timestamp="1595611515822">
+    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup" timestamp="1595612999574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595611515822" />
+    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595612999574" />
   </component>
 </project>
