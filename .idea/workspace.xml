@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="427a64b7-51c1-4b0d-943a-e5eebe1c46bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AlumnoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AlumnoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/alumno/ajax.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alumno/ajax.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/alumno/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alumno/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595508429569</updated>
       <workItem from="1595508432144" duration="1056000" />
-      <workItem from="1595607560957" duration="5656000" />
+      <workItem from="1595607560957" duration="5927000" />
     </task>
     <task id="LOCAL-00001" summary="componentes para los cruds">
       <created>1595611658573</created>
@@ -196,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595611703116</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Crud de alumnos inicial parte 2">
+      <created>1595616072954</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595616072954</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,13 +210,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="componentes para los cruds" />
     <MESSAGE value="Crud de alumnos inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crud de alumnos inicial" />
+    <MESSAGE value="Crud de alumnos inicial parte 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Crud de alumnos inicial parte 2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="508" y="43" key="CommitChangelistDialog2" timestamp="1595611702098">
+    <state x="508" y="43" key="CommitChangelistDialog2" timestamp="1595616072000">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="508" y="43" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595611702098" />
+    <state x="508" y="43" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595616072000" />
     <state width="1865" height="443" key="GridCell.Tab.0.bottom" timestamp="1595543686460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -233,6 +238,10 @@
     </state>
     <state width="1865" height="443" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595508863678" />
     <state width="1865" height="443" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595543686460" />
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1595616162598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595616162598" />
     <state x="591" y="302" key="com.intellij.ide.util.TipDialog" timestamp="1595607638421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
