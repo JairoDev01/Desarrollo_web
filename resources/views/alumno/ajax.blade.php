@@ -1,11 +1,10 @@
-
+@extends('layouts.app')
 @section('style')
 
     <link href="{{asset('css/loading.css')}}" rel="stylesheet">
 
 @endsection
 @section('contenido')
-
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             @can('role-create')
@@ -37,5 +36,5 @@
 @endsection
 @section('scripts')
     <script src="{{asset('js/ajax-crud.js')}}"></script>
-    <script src="{{asset('js-brc/generico/index.js')}}"></script>
+    <script src="{{asset('js/generico/index.js')}}"></script>
 @endsection

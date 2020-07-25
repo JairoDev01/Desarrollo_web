@@ -7,23 +7,23 @@ use Illuminate\Http\Request;
 
 class AlumnoController extends Controller
 {
-    public function __construct()
+    /*public function __construct()
     {
 
         $this->middleware('auth');
-    }
+    }*/
 
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\Response|\Illuminate\View\View
+     * @return \Illuminate\Contracts\View\Factory
      */
-    public function index(Request $request)
+    public function index()
     {
-        $alumno = Alumno::all()
-            ->paginate(20);
-
-        if ($request->ajax()) {
+        $alumno = Alumno::all();
+        //dd($alumno);
+        return view('alumno.index',compact('alumno'));
+        /*if ($request->ajax()) {
             return view('alumno.index',
                 [
                     'alumno' => $alumno
@@ -35,7 +35,7 @@ class AlumnoController extends Controller
                     'alumno' => $alumno
                 ]
             );
-        }
+        }*/
     }
 
     /**

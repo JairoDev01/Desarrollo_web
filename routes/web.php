@@ -16,8 +16,8 @@ Auth::routes();*/
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/alumno', 'AlumnoController@index')->name('alumno.index');
+//Route::resource('alumno','AlumnoController');
+Route::get('alumno', 'AlumnoController@index')->name('alumno.index');
 Route::get('alumno/create', 'AlumnoController@create')->name('alumno.create');
 Route::post('alumno/create', 'AlumnoController@store')->name('alumno.store');
 Route::get('alumno/{id}/edit', 'AlumnoController@edit')->name('alumno.edit');
