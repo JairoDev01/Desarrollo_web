@@ -111,10 +111,11 @@ class AlumnoController extends Controller
         //
 
 
-        $empleado = Alumno::findOrFail($id);
+        $alumno = Alumno::findOrFail($id);
+        //dd($alumno);
 
         return view('alumno.edit', [
-            'empleado' => $empleado
+            'alumno' => $alumno
         ]);
     }
 

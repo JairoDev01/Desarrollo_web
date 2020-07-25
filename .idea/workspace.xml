@@ -4,9 +4,7 @@
     <list default="true" id="427a64b7-51c1-4b0d-943a-e5eebe1c46bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AlumnoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AlumnoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/alumno/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alumno/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/alumno/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alumno/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/alumno/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alumno/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +187,7 @@
       <workItem from="1595508432144" duration="1056000" />
       <workItem from="1595607560957" duration="6124000" />
       <workItem from="1595676400150" duration="4627000" />
-      <workItem from="1595689552716" duration="6478000" />
+      <workItem from="1595689552716" duration="7921000" />
     </task>
     <task id="LOCAL-00001" summary="componentes para los cruds">
       <created>1595611658573</created>
@@ -240,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595691303467</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Creación de un nuevo alumno (aun no funciona)">
+      <created>1595697862273</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1595697862273</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,13 +260,14 @@
     <MESSAGE value="Agregando boostrap" />
     <MESSAGE value="Index de la tabla de Alumnos" />
     <MESSAGE value="Ajustes en el Index" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajustes en el Index" />
+    <MESSAGE value="Creación de un nuevo alumno (aun no funciona)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creación de un nuevo alumno (aun no funciona)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="508" y="43" key="CommitChangelistDialog2" timestamp="1595691299725">
+    <state x="508" y="43" key="CommitChangelistDialog2" timestamp="1595697860831">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="508" y="43" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595691299725" />
+    <state x="508" y="43" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595697860831" />
     <state width="1865" height="443" key="GridCell.Tab.0.bottom" timestamp="1595543686460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -290,9 +296,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="591" y="302" key="com.intellij.ide.util.TipDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595607638421" />
-    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup" timestamp="1595689056696">
+    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup" timestamp="1595698100055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595689056696" />
+    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595698100055" />
   </component>
 </project>
