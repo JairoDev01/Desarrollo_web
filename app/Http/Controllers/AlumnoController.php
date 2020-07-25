@@ -22,20 +22,8 @@ class AlumnoController extends Controller
     {
         $alumno = Alumno::all();
         //dd($alumno);
-        return view('alumno.index',compact('alumno'));
-        /*if ($request->ajax()) {
-            return view('alumno.index',
-                [
-                    'alumno' => $alumno
-                ]
-            );
-        } else {
-            return view('alumno.ajax',
-                [
-                    'alumno' => $alumno
-                ]
-            );
-        }*/
+        return view('alumno.index', compact('alumno'));
+
     }
 
     /**
@@ -55,22 +43,33 @@ class AlumnoController extends Controller
      * Store a newly created resource in storage.
      *
      * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
         //
         //
+        /*
+                dd($request);
+                $alumno = new Alumno();
+                $alumno->Nombre = $request->get('nombre');
+                $alumno->Apellido = $request->get('apellido');
+                $alumno->Telefono = $request->get('telefono');
+                $alumno->save();
+                return redirect()
+                    ->route('alumno.index')
+                    ->with('success', 'Alumno creado correctamente');*/
 
-        $alumno = new Alumno();
-        $alumno->Nombre = $request->get('nombre');
-        $alumno->Apellido = $request->get('apellido');
-        $alumno->Telefono = $request->get('telefono');
-        $alumno->save();
+        /*$alumno = new Alumno([
+            'Nombre' => $request->get('nombre'),
+            'Apellido' => $request->get('apellido'),
+            'Telefono' => $request->get('telefono')
+        ]);
+        $alumno->save();*/
+        dd($request);
+        Alumno::create($request->all());
+        return redirect('alumno.index')->with('success', 'Alumno Creado con éxito');
 
-        return redirect()
-            ->route('alumno.index')
-            ->with('success', 'Alumno creado correctamente');
     }
 
     /**

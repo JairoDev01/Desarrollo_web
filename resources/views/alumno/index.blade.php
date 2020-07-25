@@ -1,6 +1,8 @@
 @extends('layouts.layout')
 @section('content')
-    <button type="submit" class="btn btn-primary">NUEVO</button>
+    <a href="{{ route('alumno.create')}}" class="btn btn-primary">
+        NUEVO
+    </a>
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 

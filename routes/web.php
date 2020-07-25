@@ -24,5 +24,3 @@ Route::get('alumno/{id}/edit', 'AlumnoController@edit')->name('alumno.edit');
 Route::patch('alumno/{id}', 'AlumnoController@update')->name('alumno.update');
 Route::post('alumno/{id}', 'AlumnoController@destroy')->name('alumno.destroy');
 Route::get('alumno/{id}', 'AlumnoController@show')->name('empleado.show');
-
-
