@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="427a64b7-51c1-4b0d-943a-e5eebe1c46bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/ajax-crud.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/generico/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AlumnoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AlumnoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/alumno/ajax.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alumno/ajax.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +143,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -148,11 +154,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Desarrollo_web\public\js" />
       <recent name="C:\xampp\htdocs\Desarrollo_web\resources\views" />
       <recent name="C:\xampp\htdocs\Desarrollo_web\public\css" />
       <recent name="C:\xampp\htdocs\Desarrollo_web\app\Http\Controllers" />
       <recent name="C:\xampp\htdocs\Desarrollo_web\app" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -177,7 +190,8 @@
       <option name="presentableId" value="Default" />
       <updated>1595508429569</updated>
       <workItem from="1595508432144" duration="1056000" />
-      <workItem from="1595607560957" duration="5927000" />
+      <workItem from="1595607560957" duration="6124000" />
+      <workItem from="1595676400150" duration="847000" />
     </task>
     <task id="LOCAL-00001" summary="componentes para los cruds">
       <created>1595611658573</created>
@@ -200,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595616072954</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Conexión base de datos">
+      <created>1595616340141</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595616340141</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,13 +232,14 @@
     <MESSAGE value="componentes para los cruds" />
     <MESSAGE value="Crud de alumnos inicial" />
     <MESSAGE value="Crud de alumnos inicial parte 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crud de alumnos inicial parte 2" />
+    <MESSAGE value="Conexión base de datos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Conexión base de datos" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="508" y="43" key="CommitChangelistDialog2" timestamp="1595616072000">
+    <state x="508" y="43" key="CommitChangelistDialog2" timestamp="1595616339318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="508" y="43" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595616072000" />
+    <state x="508" y="43" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595616339318" />
     <state width="1865" height="443" key="GridCell.Tab.0.bottom" timestamp="1595543686460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -246,9 +268,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="591" y="302" key="com.intellij.ide.util.TipDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595607638421" />
-    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup" timestamp="1595612999574">
+    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup" timestamp="1595677305311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595612999574" />
+    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1595677305311" />
   </component>
 </project>
