@@ -156,7 +156,7 @@ class AlumnoController extends Controller
      * Remove the specified resource from storage.
      *
      * @param int $id
-     * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      */
     public function destroy($id)
     {
@@ -164,9 +164,9 @@ class AlumnoController extends Controller
         try {
             $empleado = Alumno::findOrFail($id);
             $empleado->delete();
-            return response()->json(
-                ['success' => 'Alumno dado de baja correctamente']
-            );
+            return redirect()
+                ->route('alumno.index')
+                ->with('success', 'Empleado actualizado correctamente');
 
         } catch (\Exception $ex) {
 

@@ -41,13 +41,13 @@
                             <td>{{$key->Telefono}}</td>
                             <td><a href="{{ route('alumno.edit',$key->idalumno)}}" class="btn btn-info">EDITAR</a>
                             </td>
-                            {{-- <td>
-                                 <form action="{{ route('shares.destroy', $key->idalumno)}}" method="post">
-                                     @csrf
-                                     @method('DELETE')
-                                     <button class="btn btn-danger" type="submit">Delete</button>
+                            <td>
+                                 <form action="{{ route('alumno.destroy', $key->idalumno)}}" method="POST">
+                                     {{ csrf_field() }}
+                                     @method('POST')
+                                     <button class="btn btn-danger" type="submit">ELIMINAR</button>
                                  </form>
-                             </td>--}}
+                             </td>
                         </tr>
                     @endforeach
                     </tbody>
