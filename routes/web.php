@@ -21,6 +21,6 @@ Route::get('alumno', 'AlumnoController@index')->name('alumno.index');
 Route::get('alumno/create', 'AlumnoController@create')->name('alumno.create');
 Route::post('alumno/create', 'AlumnoController@store')->name('alumno.store');
 Route::get('alumno/{id}/edit', 'AlumnoController@edit')->name('alumno.edit');
+Route::get('alumno/{id}', 'AlumnoController@show')->name('empleado.show');
 Route::patch('alumno/{id}', 'AlumnoController@update')->name('alumno.update');
 Route::post('alumno/{id}', 'AlumnoController@destroy')->name('alumno.destroy');
-Route::get('alumno/{id}', 'AlumnoController@show')->name('empleado.show');

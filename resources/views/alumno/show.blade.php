@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 
-@section('contenido')
+@section('content')
     @component('componentes.nav',['operation'=>'Ver',
        'menu_icon'=>' fa fa-file-text ',
        'submenu_icon'=>'fa-users',

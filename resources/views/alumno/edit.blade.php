@@ -3,8 +3,8 @@
 @section('content')
     <div class="panel-body">
         <form action="{{ route('alumno.update',$alumno->idalumno) }}" method="POST">
-            @csrf
-            @method('PUT')
+            {{ csrf_field() }}
+            @method('PATCH')
             <div class="row">
 
                 <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">

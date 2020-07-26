@@ -49,16 +49,19 @@ class AlumnoController extends Controller
     {
         //
         //
-        /*
-                dd($request);
-                $alumno = new Alumno();
-                $alumno->Nombre = $request->get('nombre');
-                $alumno->Apellido = $request->get('apellido');
-                $alumno->Telefono = $request->get('telefono');
-                $alumno->save();
-                return redirect()
-                    ->route('alumno.index')
-                    ->with('success', 'Alumno creado correctamente');*/
+
+        //dd($request);
+        $alumno = new Alumno();
+        $alumno->Nombre = $request->get('nombre');
+        $alumno->Apellido = $request->get('apellido');
+        $alumno->Telefono = $request->get('telefono');
+        $alumno->save();
+        return redirect()
+            ->route('alumno.index')
+            ->with('success', 'Alumno Creado con éxito');
+        /*  return redirect()
+              ->route('alumno.index')
+              ->with('success', 'Alumno creado correctamente');*/
 
         /*$alumno = new Alumno([
             'Nombre' => $request->get('nombre'),
@@ -66,9 +69,9 @@ class AlumnoController extends Controller
             'Telefono' => $request->get('telefono')
         ]);
         $alumno->save();*/
-        dd($request);
-        Alumno::create($request->all());
-        return redirect('alumno.index')->with('success', 'Alumno Creado con éxito');
+        //dd($request);
+        //Alumno::create($request->all());
+
 
     }
 
@@ -129,8 +132,9 @@ class AlumnoController extends Controller
     public function update(Request $request, $id)
     {
         //
-
+        //dd($request);
         try {
+            //dd($request);
             $alumno = Alumno::findOrFail($id);
             $alumno->Nombre = $request->get('nombre');
             $alumno->Apellido = $request->get('apellido');
@@ -158,7 +162,6 @@ class AlumnoController extends Controller
     {
         //
         try {
-
             $empleado = Alumno::findOrFail($id);
             $empleado->delete();
             return response()->json(
